@@ -1,0 +1,30 @@
+{% extends 'index.html'%}
+
+{%block css%}
+<link rel="stylesheet" href="{{url_for('static',filename = 'css/contact.css')}}">
+{%endblock%}
+
+{%block title%}
+{{content['contact']}} | {{content['contact']}}
+{%endblock%}
+
+{%block dispContent%}
+<h4 class="text-center">{{content['contact-h']}}</h4>
+<form action="#" method="post" id="contactForm" class="mx-auto">
+    <div class="mb-3">
+        <input type="text" class="form-control rounded-0" id="name" placeholder="{{content['fname']}}">
+    </div>
+    <div class="mb-3">
+        <input type="email" class="form-control rounded-0" id="email" placeholder="{{content['email']}}">
+    </div>
+    <div class="mb-3">
+        <textarea class="form-control rounded-0" id="message" rows="5" placeholder="{{content['msg']}}"></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-dark rounded-0">{{content['submit']}}</button>
+</form>
+{%endblock%}
+
+{%block js%}
+<script src="{{url_for('static',filename = 'js/contact.js')}}">
+</script>
+{%endblock%}

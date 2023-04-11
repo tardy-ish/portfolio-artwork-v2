@@ -1,0 +1,20 @@
+#contactForm{
+    max-width: 600px;
+}
+input:lang(ar){
+    text-align: right;
+}
+input:lang(ar)::placeholder{
+    text-align: right;
+}
+
+textarea:lang(ar){
+    text-align: right;
+}
+textarea:lang(ar)::placeholder{
+    text-align: right;
+}
+
+button{
+    margin-right: auto;
+}

@@ -1,0 +1,36 @@
+{% extends 'index.html'%}
+
+{%block css%}
+<link rel="stylesheet" href="{{url_for('static',filename = 'css/bio.css')}}">
+{%endblock%}
+
+{%block title%}
+{{content['bio']}} | {{content['name']}}
+{%endblock%}
+
+{%block dispContent%}
+<div class="row justify-content-center mt-5" id="about">
+    <div class="col-md-5 col-12 my-auto">
+        <img class="img-fluid" src="{{url_for('static',filename = 'assets/images/_profile.jpg')}}" alt="" id="pfp">
+    </div>
+    <div class="col-md-5 col-12 my-auto">
+        <p class="lead">
+            {{content['about1']}}
+        </p>
+        <p class="lead">
+            {{content['about2']}}
+        </p>
+        <p class="lead">
+            {{content['about3']}}
+        </p>
+        <p class="lead">
+            {{content['about4']}}
+        </p>
+    </div>
+</div>
+{%endblock%}
+
+{%block js%}
+<script src="{{url_for('static',filename = 'js/bio.js')}}">
+</script>
+{%endblock%}

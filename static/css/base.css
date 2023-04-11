@@ -1,0 +1,10 @@
+.landing{
+    padding-top: 30vh;
+    max-width: 1000px;
+    min-height: 100vh;
+}
+
+.copyright-base{
+    margin-top: auto;
+    margin-bottom: 20vh;
+}

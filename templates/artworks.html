@@ -1,0 +1,73 @@
+{% extends 'index.html'%}
+
+{%block css%}
+<link rel="stylesheet" href="{{url_for('static',filename = 'css/artworks.css')}}">
+{%endblock%}
+
+{%block title%}
+{{content['artworks']}} | {{content['name']}}
+{%endblock%}
+
+{%block dispContent%}
+
+<!-- Carousel -->
+<div id="carousel-painting" class="mx-auto carousel slide" data-bs-theme="dark">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-painting" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-painting" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    <div class="carousel-inner">
+        {% for painting in paintings%}
+        {% if(loop.index0 == 0) %}
+        <div class="carousel-item active">
+            {%else%}
+            <div class="carousel-item">
+                {%endif%}
+                <div class="container-flex mx-auto">
+                    <div class="row align-items-center" id="artwork-view">
+                        <div class="col-md-6 col-12 d-flex justify-content-center">
+                            <img class="painting img-fluid"
+                                src="{{url_for('static',filename = 'assets/artworks_compressed/'+painting['file'])}}"
+                                alt="">
+                        </div>
+                        <div class="col-md-6 col-12 mx-auto">
+                            <h2 class="d-flex align-items-center justify-content-center">{{painting['name']}}</h2>
+                            <p class="d-flex align-items-center justify-content-center">{{painting['size']}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+        <div class="carousel-indicators">
+            {% for painting in paintings%}
+            {% if(loop.index0 == 0) %}
+            <button type="button" data-bs-target="#carousel-painting" data-bs-slide-to="{{loop.index0}}" class="active"
+                style="background-image: url({{url_for('static',filename = 'assets/artworks_compressed/'+painting['file'])}});">
+                {% else %}
+                <button type="button" data-bs-target="#carousel-painting" data-bs-slide-to="{{loop.index0}}" class=""
+                    style="background-image: url({{url_for('static',filename = 'assets/artworks_compressed/'+painting['file'])}});">
+                    {% endif %}
+                </button>
+                {%endfor%}
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="gallery modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="" alt="selected image" class="modal-img">
+            </div>
+        </div>
+    </div>
+    {%endblock%}
+
+    {%block js%}
+    <script src="{{url_for('static',filename = 'js/artworks.js')}}">
+    </script>
+    {%endblock%}

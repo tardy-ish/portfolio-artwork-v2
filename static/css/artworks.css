@@ -1,0 +1,29 @@
+.carousel {
+    max-width: 95vw;
+}
+
+.carousel-item{
+    max-height: 95vh;
+}
+
+#artwork-view:lang(ar){
+    flex-direction: row-reverse;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin: 0;
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 90px;
+    width: 90px;
+    margin: 0 5px;
+    background-size: cover;
+}
+
+.painting {
+    max-height: 600px;
+    margin: 20px 0;
+    cursor: pointer;
+}

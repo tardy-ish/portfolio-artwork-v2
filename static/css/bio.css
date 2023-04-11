@@ -1,0 +1,11 @@
+#pfp{
+    max-width: 600px;
+}
+
+#about:lang(ar){
+    flex-direction: row-reverse;
+}
+
+p:lang(ar){
+    text-align: right;
+}
