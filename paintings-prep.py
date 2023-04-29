@@ -20,7 +20,7 @@ def compress(img_list: list):
         file = file.replace('{CROP}','').strip()
         img_dict = {
             'sno':i+1,
-            'name':file[:-4],
+            'name':file.title(),
             'size':'',
             'details':'',
             'file':f'{file}.jpg'

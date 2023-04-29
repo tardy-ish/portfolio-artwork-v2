@@ -1,1 +1,103 @@
-{"order": [], "paintings": [{"sno": 1, "name": "BIRDS OF PARA", "size": "", "details": "", "file": "BIRDS OF PARADISE.jpg"}, {"sno": 2, "name": "ENCHANTED GA", "size": "", "details": "", "file": "ENCHANTED GARDEN.jpg"}, {"sno": 3, "name": "FREE", "size": "", "details": "", "file": "FREEFLOW.jpg"}, {"sno": 4, "name": "LA V", "size": "", "details": "", "file": "LA VOILE.jpg"}, {"sno": 5, "name": "SEA OF ", "size": "", "details": "", "file": "SEA OF LOVE.jpg"}, {"sno": 6, "name": "THE APPLE ", "size": "", "details": "", "file": "THE APPLE TREE.jpg"}, {"sno": 7, "name": "THE AWAKENING OF H", "size": "", "details": "", "file": "THE AWAKENING OF HEART.jpg"}, {"sno": 8, "name": "THE CALM IN THE C", "size": "", "details": "", "file": "THE CALM IN THE CHAOS.jpg"}, {"sno": 9, "name": "THE HUMAN H", "size": "", "details": "", "file": "THE HUMAN HEART.jpg"}, {"sno": 10, "name": "THE SOLITARY SE", "size": "", "details": "", "file": "THE SOLITARY SEAKER.jpg"}, {"sno": 11, "name": "THE THIRST FOR WI", "size": "", "details": "", "file": "THE THIRST FOR WISDOM.jpg"}, {"sno": 12, "name": "THE WELCOMING OF WI", "size": "", "details": "", "file": "THE WELCOMING OF WISDOM.jpg"}, {"sno": 13, "name": "TRANQUI", "size": "", "details": "", "file": "TRANQUILITY.jpg"}, {"sno": 14, "name": "UNDER THE", "size": "", "details": "", "file": "UNDER THE SEA.jpg"}]}
+{
+    "order": [],
+    "paintings": [
+        {
+            "sno": 1,
+            "name": "Birds Of Paradise",
+            "size": "100CM x 60M",
+            "details": "Oil on Canvas",
+            "file": "BIRDS OF PARADISE.jpg"
+        },
+        {
+            "sno": 2,
+            "name": "Enchanted Garden",
+            "size": "220CM x 120CM",
+            "details": "Aquarelle on Paper",
+            "file": "ENCHANTED GARDEN.jpg"
+        },
+        {
+            "sno": 3,
+            "name": "Freeflow",
+            "size": "200CM x 200CM",
+            "details": "Glycero and Oil on Canvas",
+            "file": "FREEFLOW.jpg"
+        },
+        {
+            "sno": 4,
+            "name": "La Voile",
+            "size": "190CM x 150CM",
+            "details": "Acrylic and Glycero on Canvas",
+            "file": "LA VOILE.jpg"
+        },
+        {
+            "sno": 5,
+            "name": "Sea Of Love",
+            "size": "260CM x 120CM",
+            "details": "Aquarelle on Paper",
+            "file": "SEA OF LOVE.jpg"
+        },
+        {
+            "sno": 6,
+            "name": "The Apple Tree",
+            "size": "175CM x 175CM",
+            "details": "",
+            "file": "THE APPLE TREE.jpg"
+        },
+        {
+            "sno": 7,
+            "name": "The Awakening Of Heart",
+            "size": "200CM x 130CM",
+            "details": "Acrylic and Glycero on Canvas",
+            "file": "THE AWAKENING OF HEART.jpg"
+        },
+        {
+            "sno": 8,
+            "name": "The Calm In The Chaos",
+            "size": "100CM x 100CM",
+            "details": "Acrylic on Linen",
+            "file": "THE CALM IN THE CHAOS.jpg"
+        },
+        {
+            "sno": 9,
+            "name": "The Human Heart",
+            "size": "180CM x 120CM",
+            "details": "Acrylic on Linen",
+            "file": "THE HUMAN HEART.jpg"
+        },
+        {
+            "sno": 10,
+            "name": "The Solitary Seaker",
+            "size": "220CM x 200CM",
+            "details": "Oil and Glycero on Canvas",
+            "file": "THE SOLITARY SEAKER.jpg"
+        },
+        {
+            "sno": 11,
+            "name": "The Thirst For Wisdom",
+            "size": "100CM x 150CM",
+            "details": "Aquarelle on Paper",
+            "file": "THE THIRST FOR WISDOM.jpg"
+        },
+        {
+            "sno": 12,
+            "name": "The Welcoming Of Wisdom",
+            "size": "150CM x 100CM",
+            "details": "Acrylic and Glycero on Canvas",
+            "file": "THE WELCOMING OF WISDOM.jpg"
+        },
+        {
+            "sno": 13,
+            "name": "Tranquility",
+            "size": "200CM x 200CM",
+            "details": "",
+            "file": "TRANQUILITY.jpg"
+        },
+        {
+            "sno": 14,
+            "name": "Under The Sea",
+            "size": "250CM x 170CM",
+            "details": "Acrylic on Canvas",
+            "file": "UNDER THE SEA.jpg"
+        }
+    ]
+}
