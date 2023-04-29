@@ -1,11 +1,23 @@
-#pfp{
-    max-width: 600px;
+#main:lang(ar){
+    flex-direction: row-reverse;
 }
 
-#about:lang(ar){
-    flex-direction: row-reverse;
+
+.img-div{
+    max-width: 450px;
+    width: 100%;
 }
 
 p:lang(ar){
     text-align: right;
+}
+
+@media (max-width: 768px){
+    #main{
+        padding: 10px;
+    }
+    .about{
+        font-size: 1rem;
+    }
+    
 }

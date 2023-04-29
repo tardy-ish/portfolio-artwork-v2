@@ -6,14 +6,17 @@
         "bio": "Bio",
         "artworks": "Selected Works",
         "contact": "Contact",
+        "enter": "Enter Site",
         "lang": {
             "changeLang": "Change Language",
             "en": "English",
             "ar": "Arabic"
         },
-        "about1": "Lana Khayat is a Lebanese artist, currently based in Dubai. She exhibits in New York, London and across the Middle East. She held her first solo exhibition in 2022 and her work is represented in several prestigious private collections. Throughout her career, she has also collaborated with leading international institutions including the Guggenheim Museum. Lana holds a Bachelors in Design from the American University of Beirut, and a Masters in Fine Arts from the School of Visual Arts, New York.",
-        "about2": "Lana traces her artistic lineage to her great-grandfather, Mohamad Suleiman Khayat, who contributed to the creation and restoration of traditional Syrian Ajami rooms. His work is showcased at the Metropolitan Museum of Art in New York and the Shangri La Museum of Islamic Art, Culture and Design in Hawaii. Growing up in a family of unique artistic talent had a profound influence on Lana, ultimately choosing art as her form of expression, as her forefathers before her.",
-        "about3": "Lana has developed an exceptional artistic direction. From her perspective, nature offers music to those who are truly willing to lend an ear. As an introvert, she has found herself more fluent with Mother Nature than Mankind. Her art describes the free-flowing journey of her conversations with the wilderness; each tone and stroke overflowing with meaning beyond human script or language.",
+        "about":[
+            "Lana Khayat is a Lebanese artist, currently based in Dubai. She exhibits in New York, London and across the Middle East. She held her first solo exhibition in 2022 and her work is represented in several prestigious private collections. Throughout her career, she has also collaborated with leading international institutions including the Guggenheim Museum. Lana holds a Bachelors in Design from the American University of Beirut, and a Masters in Fine Arts from the School of Visual Arts, New York.",
+            "Lana traces her artistic lineage to her great-grandfather, Mohamad Suleiman Khayat, who contributed to the creation and restoration of traditional Syrian Ajami rooms. His work is showcased at the Metropolitan Museum of Art in New York and the Shangri La Museum of Islamic Art, Culture and Design in Hawaii. Growing up in a family of unique artistic talent had a profound influence on Lana, ultimately choosing art as her form of expression, as her forefathers before her.",
+            "Lana has developed an exceptional artistic direction. From her perspective, nature offers music to those who are truly willing to lend an ear. As an introvert, she has found herself more fluent with Mother Nature than Mankind. Her art describes the free-flowing journey of her conversations with the wilderness; each tone and stroke overflowing with meaning beyond human script or language."
+        ],
         "artworks-h": "SELECTED WORKS",
         "contact-h": "CONTACT",
         "fname": "First Name",
@@ -29,15 +32,18 @@
         "bio": "السيرة الذاتية",
         "artworks": "الأعمال",
         "contact": "تواصل",
+        "enter": "دخل",
         "lang": {
             "changeLang": "تغيير اللغة",
             "en": "الإنكليزية",
             "ar": "العربية"
         },
-        "about1": "درست لانا التصميم في الجامعة الأمريكية في بيروت، وحصلت على درجة الماجستير في الفنون الجميلة من كلية الفنون البصرية في نيويورك. وهي تقيم حاليًا بين إسبانيا ودبي.",
-        "about2": "استقطبت لوحات لانا خياط، التي تتميز بإنتاجها الغزير والمتخصصةُ في الخط والنقوش، المعجبين من جميِع أنحاءِ منطقة الشرق الأوسط.",
-        "about3": "تعلّمت الفنانة اللبنانية فن الخط بنفسها من خلال مشاهدتها لوالدها وجدها يقومان بتنفيذ وترميم غرف العجمي. وتُعرَض أعمال جدها الأكبر، محمد سليمان خياط، في متحف متروبوليتان وجامعة نيويورك ومتحف شانغريلا للفنون والثقافة والتصميم الإسلامي في هاواي .تحول تركيز أعمالها الجديدة من تمثيل الخط والنقوش (فقط) إلى تصوير الخطِ بصفاتٍ وأشكالٍ مختلفة كالتمثيل من خلال الضوء والمناظر الطبيعية والمناظر الخضراء. وهي تركز الآن أكثر فأكثر على الصفات الُزخرفية للون والشكل.",
-        "about4": "عرضت لانا أعمالها في المملكة العربية السعودية والإمارات العربية المتحدة ولندن ونيويورك.",
+        "about":[
+            ".درست لانا التصميم في الجامعة الأمريكية في بيروت، وحصلت على درجة الماجستير في الفنون الجميلة من كلية الفنون البصرية في نيويورك. وهي تقيم حاليًا بين إسبانيا ودبي",
+            ".استقطبت لوحات لانا خياط، التي تتميز بإنتاجها الغزير والمتخصصةُ في الخط والنقوش، المعجبين من جميِع أنحاءِ منطقة الشرق الأوسط",
+            ".تعلّمت الفنانة اللبنانية فن الخط بنفسها من خلال مشاهدتها لوالدها وجدها يقومان بتنفيذ وترميم غرف العجمي. وتُعرَض أعمال جدها الأكبر، محمد سليمان خياط، في متحف متروبوليتان وجامعة نيويورك ومتحف شانغريلا للفنون والثقافة والتصميم الإسلامي في هاواي .تحول تركيز أعمالها الجديدة من تمثيل الخط والنقوش (فقط) إلى تصوير الخطِ بصفاتٍ وأشكالٍ مختلفة كالتمثيل من خلال الضوء والمناظر الطبيعية والمناظر الخضراء. وهي تركز الآن أكثر فأكثر على الصفات الُزخرفية للون والشكل",
+            ".عرضت لانا أعمالها في المملكة العربية السعودية والإمارات العربية المتحدة ولندن ونيويورك"
+        ],
         "artworks-h": "الأعمال",
         "contact-h": "تواصل",
         "fname": "الاسم ",

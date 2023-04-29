@@ -15,6 +15,16 @@ textarea:lang(ar)::placeholder{
     text-align: right;
 }
 
-button{
+#contactForm button{
     margin-right: auto;
+}
+
+h4{
+    margin-top: 100px;
+}
+
+@media (max-width: 768px){
+    #contactForm{
+        padding: 10px;
+    }
 }

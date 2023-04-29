@@ -27,3 +27,14 @@
     margin: 20px 0;
     cursor: pointer;
 }
+
+@media (max-width: 768px){
+    .painting {
+        max-height: 400px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    .carousel-inner{
+        padding-top: 20px;
+    }
+}
