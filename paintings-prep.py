@@ -33,5 +33,5 @@ image_list = [f for f in os.listdir('./static/assets/artworks') if f.endswith('.
 
 compress(image_list)
 
-with open('./static/assets/paintings.json','w') as f:
+with open('./static/paintings_temp.json','w') as f:
     json.dump(json_file,f)

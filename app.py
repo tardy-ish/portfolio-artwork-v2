@@ -47,7 +47,7 @@ def artworks(lang):
         lang=lang,
         content=tls[lang],
         src='artworks_compressed',
-        paintings=paintings[lang]
+        paintings=paintings['paintings']
     )
 
 @app.route('/index')
