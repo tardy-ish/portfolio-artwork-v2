@@ -2,6 +2,13 @@
     "order": [],
     "paintings": [
         {
+            "sno": 0,
+            "name": "Outpour Of Soul",
+            "size": "100CM x 160CM",
+            "details": "Aquarelle on Paper",
+            "file": "outpour of soul.jpg"
+        },
+        {
             "sno": 1,
             "name": "Birds Of Paradise",
             "size": "100CM x 60M",
@@ -39,7 +46,7 @@
         {
             "sno": 6,
             "name": "The Apple Tree",
-            "size": "175CM x 175CM",
+            "size": "175CM x 175CM [CROP]",
             "details": "Acrylic and Glycero on Canvas",
             "file": "THE APPLE TREE.jpg"
         },

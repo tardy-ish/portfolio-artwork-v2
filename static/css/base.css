@@ -2,20 +2,27 @@ body{
     font-family: 'Bodoni Moda', 'Noto Kufi Arabic', serif;
 }
 
-
-.menu-en:lang(ar){
-    display: none;
+.menu-en:lang(en){
+    display: inline !important;
 }
 
 .menu-ar:lang(ar){
-    display: inline;
+    display: inline !important;
 }
 
-.menu-en:lang(en){
-    display: inline;
+.menu-es:lang(es){
+    display: inline !important;
 }
 
-.menu-ar:lang(en){
+.drop-en:lang(en){
+    display: none;
+}
+
+.drop-ar:lang(ar){
+    display: none;
+}
+
+.drop-es:lang(es){
     display: none;
 }
 

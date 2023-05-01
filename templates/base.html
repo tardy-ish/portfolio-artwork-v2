@@ -36,15 +36,19 @@
             <div class="dropdown d-inline">
                 <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="menu-en"><span class="fi fi-us"></span>English</span>
-                    <span class="menu-ar"><span class="fi fi-lb"></span>العربية</span>
+                    <span class="menu-en d-none"><span class="fi fi-us"></span>English</span>
+                    <span class="menu-ar d-none"><span class="fi fi-lb"></span>العربية</span>
+                    <span class="menu-es d-none"><span class="fi fi-es"></span>Español</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li class="menu-ar"><a class="dropdown-item" href="/en">
+                    <li class="drop-en"><a class="dropdown-item" href="/en">
                             <span class="fi fi-us"></span>English
                         </a></li>
-                    <li class="menu-en"><a class="dropdown-item" href="/ar">
+                    <li class="drop-ar"><a class="dropdown-item" href="/ar">
                             <span class="fi fi-lb"></span>العربية
+                        </a></li>
+                    <li class="drop-es"><a class="dropdown-item" href="/es">
+                            <span class="fi fi-es"></span>Español
                         </a></li>
                 </ul>
                 <a class="btn" href="/{{lang}}/selected_works"> Enter Site

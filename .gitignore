@@ -1,2 +1,4 @@
 *.jpg
 *.jpeg
+paintings_temp.json
+/static/assets/images

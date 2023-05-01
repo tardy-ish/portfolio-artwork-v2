@@ -1,103 +1,122 @@
-{
-    "order": [],
-    "paintings": [
-        {
-            "sno": 1,
-            "name": "Birds Of Paradise",
-            "size": "100CM x 60M",
-            "details": "Oil on Canvas",
-            "file": "BIRDS OF PARADISE.jpg"
-        },
-        {
-            "sno": 2,
-            "name": "Enchanted Garden",
-            "size": "220CM x 120CM",
-            "details": "Aquarelle on Paper",
-            "file": "ENCHANTED GARDEN.jpg"
-        },
-        {
-            "sno": 3,
-            "name": "Freeflow",
-            "size": "200CM x 200CM",
-            "details": "Glycero and Oil on Canvas",
-            "file": "FREEFLOW.jpg"
-        },
-        {
-            "sno": 4,
-            "name": "La Voile",
-            "size": "190CM x 150CM",
-            "details": "Acrylic and Glycero on Canvas",
-            "file": "LA VOILE.jpg"
-        },
-        {
-            "sno": 5,
-            "name": "Sea Of Love",
-            "size": "260CM x 120CM",
-            "details": "Aquarelle on Paper",
-            "file": "SEA OF LOVE.jpg"
-        },
-        {
-            "sno": 6,
-            "name": "The Apple Tree",
-            "size": "175CM x 175CM",
-            "details": "",
-            "file": "THE APPLE TREE.jpg"
-        },
-        {
-            "sno": 7,
-            "name": "The Awakening Of Heart",
-            "size": "200CM x 130CM",
-            "details": "Acrylic and Glycero on Canvas",
-            "file": "THE AWAKENING OF HEART.jpg"
-        },
-        {
-            "sno": 8,
-            "name": "The Calm In The Chaos",
-            "size": "100CM x 100CM",
-            "details": "Acrylic on Linen",
-            "file": "THE CALM IN THE CHAOS.jpg"
-        },
-        {
-            "sno": 9,
-            "name": "The Human Heart",
-            "size": "180CM x 120CM",
-            "details": "Acrylic on Linen",
-            "file": "THE HUMAN HEART.jpg"
-        },
-        {
-            "sno": 10,
-            "name": "The Solitary Seaker",
-            "size": "220CM x 200CM",
-            "details": "Oil and Glycero on Canvas",
-            "file": "THE SOLITARY SEAKER.jpg"
-        },
-        {
-            "sno": 11,
-            "name": "The Thirst For Wisdom",
-            "size": "100CM x 150CM",
-            "details": "Aquarelle on Paper",
-            "file": "THE THIRST FOR WISDOM.jpg"
-        },
-        {
-            "sno": 12,
-            "name": "The Welcoming Of Wisdom",
-            "size": "150CM x 100CM",
-            "details": "Acrylic and Glycero on Canvas",
-            "file": "THE WELCOMING OF WISDOM.jpg"
-        },
-        {
-            "sno": 13,
-            "name": "Tranquility",
-            "size": "200CM x 200CM",
-            "details": "",
-            "file": "TRANQUILITY.jpg"
-        },
-        {
-            "sno": 14,
-            "name": "Under The Sea",
-            "size": "250CM x 170CM",
-            "details": "Acrylic on Canvas",
-            "file": "UNDER THE SEA.jpg"
-        }
-    ]
-}
+[
+    {
+        "name": "Outpour Of Soul",
+        "year": "2022",
+        "size": "100CM x 160CM",
+        "details": "AQUARELLE ON PAPER",
+        "file": "outpour_of_soul.jpg",
+        "crop": "[CROP]"
+    },
+    {
+        "name": "Birds Of Paradise",
+        "year": "2023",
+        "size": "100CM x 60CM",
+        "details": "Oil On Canvas",
+        "file": "birds_of_paradise.jpg",
+        "crop": ""
+    },
+    {
+        "name": "Enchanted Garden",
+        "year": "2021",
+        "size": "220CM x 120CM",
+        "details": "AQUARELLE ON PAPER",
+        "file": "enchanted_garden.jpg",
+        "crop": ""
+    },
+    {
+        "name": "Freeflow",
+        "year": "2023",
+        "size": "200CM x 200CM",
+        "details": "GLYCERO AND OIL ON CANVAS",
+        "file": "freeflow.jpg",
+        "crop": "[CROP]"
+    },
+    {
+        "name": "La Voile",
+        "year": "2023",
+        "size": "190CM x 150CM",
+        "details": "ACRYLIC AND GLYCERO ON CANVAS",
+        "file": "la_voile.jpg",
+        "crop": "[CROP]"
+    },
+    {
+        "name": "Sea Of Love",
+        "year": "2020",
+        "size": "260CM x 120CM",
+        "details": "AQUARELLE ON PAPER",
+        "file": "sea_of_love.jpg",
+        "crop": ""
+    },
+    {
+        "name": "The Apple Tree",
+        "year": "2023",
+        "size": "175CM x 175CM",
+        "details": "Acrylic and Glycero on Canvas",
+        "file": "the_apple_tree.jpg",
+        "crop": ""
+    },
+    {
+        "name": "The Awakening Of Heart",
+        "year": "2022",
+        "size": "200CM x 130CM",
+        "details": "Acrylic and Glycero on Canvas",
+        "file": "the_awakening_of_heart.jpg",
+        "crop": ""
+    },
+    {
+        "name": "The Calm In The Chaos",
+        "year": "2022",
+        "size": "100CM x 100CM",
+        "details": "Acrylic on Linen",
+        "file": "the_calm_in_the_chaos.jpg",
+        "crop": ""
+    },
+    {
+        "name": "The Human Heart",
+        "year": "2023",
+        "size": "180CM x 120CM",
+        "details": "Acrylic on Linen",
+        "file": "the_human_heart.jpg",
+        "crop": ""
+    },
+    {
+        "name": "The Solitary Seaker",
+        "year": "2018",
+        "size": "220CM x 200CM",
+        "details": "Oil and Glycero on Canvas",
+        "file": "the_solitary_seaker.jpg",
+        "crop": ""
+    },
+    {
+        "name": "The Thirst For Wisdom",
+        "year": "2021",
+        "size": "100CM x 150CM",
+        "details": "Aquarelle on Paper",
+        "file": "the_thirst_for_wisdom.jpg",
+        "crop": ""
+    },
+    {
+        "name": "The Welcoming Of Wisdom",
+        "year": "2023",
+        "size": "150CM x 100CM",
+        "details": "Acrylic and Glycero on Canvas",
+        "file": "the_welcoming_of_wisdom.jpg",
+        "crop": ""
+    },
+    {
+        "name": "Tranquility",
+        "year": "2017",
+        "size": "200CM x 200CM",
+        "details": "Acrylic and Glycero on Canvas",
+        "file": "tranquility.jpg",
+        "crop": ""
+    },
+    {
+        "name": "Under The Sea",
+        "year": "2023",
+        "size": "250CM x 170CM",
+        "details": "Acrylic on Canvas",
+        "file": "under_the_sea.jpg",
+        "crop": ""
+    }
+]

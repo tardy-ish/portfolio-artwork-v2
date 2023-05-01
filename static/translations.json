@@ -7,10 +7,12 @@
         "artworks": "Selected Works",
         "contact": "Contact",
         "enter": "Enter Site",
+        "photo":"Photo by Nael Halabi",
         "lang": {
             "changeLang": "Change Language",
             "en": "English",
-            "ar": "Arabic"
+            "ar": "العربية",
+            "es": "Español"
         },
         "about":[
             "Lana Khayat is a Lebanese artist, currently based in Dubai. She exhibits in New York, London and across the Middle East. She held her first solo exhibition in 2022 and her work is represented in several prestigious private collections. Throughout her career, she has also collaborated with leading international institutions including the Guggenheim Museum. Lana holds a Bachelors in Design from the American University of Beirut, and a Masters in Fine Arts from the School of Visual Arts, New York.",
@@ -33,10 +35,12 @@
         "artworks": "الأعمال",
         "contact": "تواصل",
         "enter": "دخل",
+        "photo":"Photo by Nael Halabi",
         "lang": {
             "changeLang": "تغيير اللغة",
-            "en": "الإنكليزية",
-            "ar": "العربية"
+            "en": "English",
+            "ar": "العربية",
+            "es": "Español"
         },
         "about":[
             ".درست لانا التصميم في الجامعة الأمريكية في بيروت، وحصلت على درجة الماجستير في الفنون الجميلة من كلية الفنون البصرية في نيويورك. وهي تقيم حاليًا بين إسبانيا ودبي",
@@ -51,5 +55,33 @@
         "msg": "...اكتب رسالتك هنا",
         "submit": "إرسال",
         "copyright": "حقوق الطبع والنشر"
+    },
+    "es": {
+        "brand": "LANA KHAYAT",
+        "name": "Lana Khayat",
+        "home": "Home",
+        "bio": "Bio",
+        "artworks": "Trabajos Seleccionados",
+        "contact": "Contacto",
+        "enter": "Enter Site",
+        "photo":"Foto tomada por Nael Halabi",
+        "lang": {
+            "changeLang": "Idioma",
+            "en": "English",
+            "ar": "العربية",
+            "es": "Español"
+        },
+        "about":[
+            "Lana Khayat es una artista libanesa que actualmente reside en Dubái. Expone en Nueva York, Londres y en todo el Medio Oriente. Realizó su primera exposición individual en 2022 y su obra está representada en varias colecciones privadas de prestigio. A lo largo de su carrera, también ha colaborado con instituciones internacionales líderes, incluido el Museo Guggenheim. Lana tiene una Licenciatura en Diseño de la Universidad Americana de Beirut y una Maestría en Bellas Artes de la Escuela de Artes Visuales de Nueva York.",
+            "Lana remonta su linaje artístico a su bisabuelo, Mohamad Suleiman Khayat, quien contribuyó a la creación y restauración de las habitaciones tradicionales sirias de Ajami. Su trabajo se exhibe en el Museo Metropolitano de Arte de Nueva York y el Museo Shangri La de Arte, Cultura y Diseño Islámicos en Hawái. Crecer en una familia de talento artístico único tuvo una profunda influencia en Lana, y finalmente eligió el arte como su forma de expresión, como sus antepasados ​​antes que ella.",
+            "Lana ha desarrollado una dirección artística excepcional. Desde su perspectiva, la naturaleza ofrece música a aquellos que están verdaderamente dispuestos a prestar oídos. Como introvertida, se ha encontrado más fluida con la Madre Naturaleza que con la Humanidad. Su arte describe el viaje fluido de sus conversaciones con la naturaleza; cada tono y trazo rebosan de significado más allá de la escritura o el lenguaje humano."
+        ],
+        "artworks-h": "TRABAJOS SELECCIONADOS",
+        "contact-h": "CONTACTO",
+        "fname": "Nombre",
+        "email": "Correo Electrónico",
+        "msg": "Mensaje",
+        "submit": "Entregar",
+        "copyright": "Copyright"
     }
 }

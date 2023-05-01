@@ -39,15 +39,14 @@ def bio(lang):
 @app.route('/<lang>/selected_works')
 def artworks(lang):
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
-    paintings = json.load(open('./static/paintings.json',encoding='utf-8'))
-    # paintings = new_images('./static/assets/artworks_new')
+    paintings = json.load(open('./static/assets/paintings.json',encoding='utf-8'))
     return render_template(
         'artworks.html',
         art="active",
         lang=lang,
         content=tls[lang],
-        src='artworks_compressed',
-        paintings=paintings['paintings']
+        src='images/artworks_prepped',
+        paintings=paintings
     )
 
 @app.route('/index')
