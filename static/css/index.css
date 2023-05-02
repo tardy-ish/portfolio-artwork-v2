@@ -3,14 +3,6 @@ body{
     font-family: 'Bodoni Moda', 'Noto Kufi Arabic', serif;
 }
 
-body:lang(en){
-    font-family: 'Bodoni Moda', serif;
-}
-
-body:lang(ar){
-    font-family: 'Noto Kufi Arabic', serif;
-}
-
 .nav{
     padding-top: 5px;
     --bs-nav-link-color: #4a4a4a;
@@ -24,7 +16,7 @@ ul:lang(ar){
     bottom:0;
     left:0;
     width:100%;
-    height: 50px;
+    height: 40px;
     background-color: white;
     padding-top: 10px;
 }
