@@ -1,8 +1,15 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, request
 import os
 import json
 
+import config
+
+from flask_mail import Mail,Message
+
+
 app = Flask(__name__)
+app.config.from_object(config.DevelopmentConfig)
+mail = Mail(app)
 
 @app.route('/')
 def base_en():
@@ -17,7 +24,7 @@ def base_ar(lang):
 
 
 @app.route('/<lang>/bio')
-def contact(lang):
+def bio(lang):
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
     return render_template(
         'bio.html',
@@ -26,8 +33,16 @@ def contact(lang):
         content=tls[lang],
     )
 
-@app.route('/<lang>/contact')
-def bio(lang):
+@app.route('/<lang>/contact',methods=['GET','POST'])
+def contact(lang):
+    if request.method == 'POST':
+        form_data = dict(request.form)
+        msg = Message(
+            subject='Hey',
+            recipients=['daksh301200@gmail.com']
+        )
+        msg.body = 'This is a test email'
+        mail.send(msg)
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
     return render_template(
         'contact.html',
