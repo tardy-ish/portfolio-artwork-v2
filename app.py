@@ -39,6 +39,7 @@ def contact(lang):
         form_data = dict(request.form)
         msg = Message(
             subject='Hey',
+            # sender='spidey.ds@hotmail.com',
             recipients=['daksh301200@gmail.com']
         )
         msg.body = 'This is a test email'
