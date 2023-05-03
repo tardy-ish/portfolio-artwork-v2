@@ -1,13 +1,16 @@
-from flask import Flask, render_template, redirect, request
-import os
+from flask import Flask, render_template, redirect, request, flash
 import json
 
 import config
 
-from flask_mail import Mail,Message
+from flask_mail import Mail
+from mailing import clientMessage, selfMessage
+from time import sleep
+
 
 
 app = Flask(__name__)
+app.secret_key = 'wot be this'
 app.config.from_object(config.DevelopmentConfig)
 mail = Mail(app)
 
@@ -35,22 +38,36 @@ def bio(lang):
 
 @app.route('/<lang>/contact',methods=['GET','POST'])
 def contact(lang):
+    status = ['','d-none']
     if request.method == 'POST':
         form_data = dict(request.form)
-        msg = Message(
-            subject='Hey',
-            # sender='spidey.ds@hotmail.com',
-            recipients=['daksh301200@gmail.com']
+        client_message = clientMessage(
+            recepient=form_data['email'],
+            name=form_data['name']
         )
-        msg.body = 'This is a test email'
-        mail.send(msg)
+        self_message = selfMessage(
+            name=form_data['name'],
+            email=form_data['email'],
+            message=form_data['message']
+        )
+        mail.send(client_message)
+        mail.send(self_message)
+        status = ['d-none','']
+
+        # mail.send(msg)
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
     return render_template(
         'contact.html',
         contact="active",
         lang=lang,
         content=tls[lang],
+        status=status,
     )
+
+@app.route('/<lang>/contactp')
+def contactp(lang):
+    
+    pass
 
 @app.route('/<lang>/selected_works')
 def artworks(lang):

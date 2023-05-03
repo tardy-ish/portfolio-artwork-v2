@@ -21,3 +21,12 @@ ul:lang(ar){
     padding-top: 10px;
 }
 
+@media (max-width: 768px){
+    .nav{
+        padding-top: 0px;
+    }
+    .sticky-top{
+        display: none;
+    }
+}
+

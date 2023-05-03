@@ -3,16 +3,13 @@ class Config(object):
     DEBUG = False
     TESTING = False
 
-    # MAIL_SERVER = 'smtpout.secureserver.net'
-    MAIL_SERVER = 'smtp.office365.com'
-    MAIL_PORT = 587
-    MAIL_USERNAME = 'hello@lanakhayat.com'
-    # MAIL_USERNAME = 'spidey.ds@hotmail.com'
+    MAIL_SERVER = 'smtp.gmail.com'
+    MAIL_PORT = 465
+    MAIL_USERNAME = os.environ.get('EMAIL')
     MAIL_PASSWORD = os.environ.get('MAIL_PASS')
-    # MAIL_PASSWORD = 'dka86s61'
-    MAIL_USE_TLS = True
-    MAIL_USE_SSL = False
-    MAIL_DEFAULT_SENDER = 'hello@lanakhayat.com'
+    MAIL_USE_TLS = False
+    MAIL_USE_SSL = True
+    MAIL_DEFAULT_SENDER = os.environ.get('EMAIL')
 
 class ProductionConfig(Config):
     pass

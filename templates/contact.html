@@ -14,7 +14,7 @@
 <h5 class="text-center">Email | Instagram</h5>
 <br>
 <br>
-<form action="#" method="post" id="contactForm" class="mx-auto">
+<form action="" method="post" id="contactForm" class="mx-auto">
     <div class="mb-3">
         <input type="text" class="form-control rounded-0" id="name" name="name"placeholder="{{content['fname']}}" required>
     </div>
@@ -24,8 +24,30 @@
     <div class="mb-3">
         <textarea class="form-control rounded-0" id="message" rows="5" name="message" placeholder="{{content['msg']}}" required></textarea>
     </div>
-    <button type="submit" class="btn btn-outline-dark rounded-0">{{content['submit']}}</button>
+    <button type="submit" class="btn btn-outline-dark rounded-0 submit" data-bs-toggle="modal" data-bs-target="#email-modal">{{content['submit']}}</button>
 </form>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#email-modal">
+    Launch static backdrop modal
+  </button> -->
+  
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="email-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="email-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-body d-flex align-items-center justify-content-center">
+                <div class="{{status}}">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p>Processing.....</p>
+                </div>
+        </div>
+            
+        </div>
+    </div>
+  </div> -->
 {%endblock%}
 
 {%block js%}
