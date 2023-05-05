@@ -5,7 +5,6 @@ import config
 
 from flask_mail import Mail
 from mailing import clientMessage, selfMessage
-from time import sleep
 
 from datetime import datetime
 
