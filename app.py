@@ -7,12 +7,28 @@ from flask_mail import Mail
 from mailing import clientMessage, selfMessage
 from time import sleep
 
+from datetime import datetime
 
+import logging
+
+#Logging setup
+logger = logging.getLogger()
+consoleHandler = logging.StreamHandler()
+logger.addHandler(consoleHandler)
+
+file_name = datetime.now().strftime("%Y-%m-%d-%H-%M")
+
+fileHandler = logging.FileHandler(f"{file_name}.log")
+logger.addHandler(fileHandler)
 
 app = Flask(__name__)
 app.secret_key = 'wot be this'
 app.config.from_object(config.DevelopmentConfig)
 mail = Mail(app)
+
+
+
+
 
 @app.route('/')
 def base_en():

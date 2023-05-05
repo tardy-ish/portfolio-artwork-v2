@@ -4,3 +4,4 @@ paintings_temp.json
 /static/assets/images
 /__pycache__
 env.variables.json
+*.log
