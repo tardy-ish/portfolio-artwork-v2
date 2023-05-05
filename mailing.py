@@ -11,7 +11,7 @@ You'll be hearing from me very soon on this mail chain.
 
 Thanks and Regards,
 Lana Khayat
-Website|lanakhayat.com
+Website  |  lanakhayat.com
         """
         self.recipients = [recepient]
         self.bcc = [os.environ.get('EMAIL')]
@@ -20,9 +20,10 @@ Website|lanakhayat.com
 class selfMessage(Message):
     def __init__(self, name:str, email:str, message:str):
         super().__init__()
-        self.subject = f"Message from {name}:{email}!"
+        self.subject = f"Message from {name} : {email}!"
         self.body = f"""
 {name} with the email: {email} has sent you the following message:
+
 {message}
 """
         self.recipients = [os.environ.get('EMAIL')]
