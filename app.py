@@ -18,7 +18,7 @@ logger.addHandler(consoleHandler)
 
 file_name = datetime.now().strftime("%Y-%m-%d-%H-%M")
 
-fileHandler = logging.FileHandler(f"{file_name}.log")
+fileHandler = logging.FileHandler(f"./logs/{file_name}.log")
 logger.addHandler(fileHandler)
 
 app = Flask(__name__)
