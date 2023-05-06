@@ -26,9 +26,6 @@ app.config.from_object(config.DevelopmentConfig)
 mail = Mail(app)
 
 
-
-
-
 @app.route('/')
 @app.route('/<lang>')
 def landing(lang='en'):
