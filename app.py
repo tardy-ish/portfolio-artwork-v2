@@ -4,7 +4,7 @@ import json
 import config
 
 from flask_mail import Mail
-from mailing import clientMessage, selfMessage
+from mailing import clientMessage
 
 from datetime import datetime
 
@@ -58,15 +58,10 @@ def contact(lang):
         form_data = dict(request.form)
         client_message = clientMessage(
             recepient=form_data['email'],
-            name=form_data['name']
-        )
-        self_message = selfMessage(
             name=form_data['name'],
-            email=form_data['email'],
             message=form_data['message']
         )
         mail.send(client_message)
-        mail.send(self_message)
         status = ['d-none','']
 
         # mail.send(msg)

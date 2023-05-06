@@ -11,6 +11,7 @@ class Config(object):
     MAIL_USE_SSL = True if os.environ.get('SSL') == "True" else False
     MAIL_USE_TLS = True if os.environ.get('TLS') == "True" else False
     MAIL_DEFAULT_SENDER = os.environ.get('EMAIL')
+    SECURITY_EMAIL_SENDER = os.environ.get('EMAIL')
 
 class ProductionConfig(Config):
     pass
