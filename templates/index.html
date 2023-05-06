@@ -31,9 +31,6 @@
         <h1 class="fs-1 text-center d-md-block d-none">{{content['brand']}}</h1>
         <ul class="nav nav-underline justify-content-center d-md-flex d-none">
             <li class="nav-item">
-                <a class="nav-link pt-3 px-5 {{home}}" aria-current="page" href="/">{{content['home']}}</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link pt-3 px-5 {{bio}}" href="/{{lang}}/bio">{{content['bio']}}</a>
             </li>
             <li class="nav-item">
@@ -41,6 +38,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link pt-3 px-5 {{contact}}" href="/{{lang}}/contact">{{content['contact']}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pt-3 px-5 {{publications}}" href="/{{lang}}/publications">{{content['publications']}}</a>
             </li>
         </ul>
     </div>
@@ -61,9 +61,6 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link pt-3 px-5 {{home}}" aria-current="page" href="/">{{content['home']}}</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link pt-3 px-5 {{bio}}" href="/{{lang}}/bio">{{content['bio']}}</a>
                         </li>
                         <li class="nav-item">
@@ -74,13 +71,23 @@
                             <a class="nav-link pt-3 px-5 {{contact}}"
                                 href="/{{lang}}/contact">{{content['contact']}}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link pt-3 px-5 {{home}}" aria-current="page" href="/">
+                                <span class="fi fi-{{content['flag']}}"></span>
+                                {{content['lang']['changeLang']}}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+    <a class="btn topcorner d-md-block d-none" href="/"> 
+        <span class="fi fi-{{content['flag']}}"></span>
+        {{content['lang']['changeLang']}}
+    </a>
     {%block dispContent%}{%endblock%}
-    <div class="footer py-1 bg-white text-center">
+    <div class="d-none footer py-1 bg-white text-center">
         {{content['copyright']}} © {{content['name']}}
     </div>
     {%block js%}{%endblock%}

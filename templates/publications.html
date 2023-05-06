@@ -1,0 +1,17 @@
+{% extends 'index.html'%}
+
+{%block css%}
+<link rel="stylesheet" href="{{url_for('static',filename = 'css/publications.css')}}">
+{%endblock%}
+
+{%block title%}
+{{content['publications']}} | {{content['name']}}
+{%endblock%}
+
+{%block dispContent%}
+{%endblock%}
+
+{%block js%}
+    <script src="{{url_for('static',filename = 'js/publications.js')}}">
+    </script>
+{%endblock%}

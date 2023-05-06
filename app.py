@@ -30,15 +30,13 @@ mail = Mail(app)
 
 
 @app.route('/')
-def base_en():
-    return redirect('/en')
-
 @app.route('/<lang>')
-def base_ar(lang):
+def landing(lang='en'):
     return render_template(
-        'base.html',
+        'landing.html',
         lang=lang
     )
+
 
 
 @app.route('/<lang>/bio')
@@ -61,10 +59,9 @@ def contact(lang):
             name=form_data['name'],
             message=form_data['message']
         )
-        mail.send(client_message)
-        status = ['d-none','']
+        # mail.send(client_message)
+        # status = ['d-none','']
 
-        # mail.send(msg)
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
     return render_template(
         'contact.html',
@@ -74,10 +71,6 @@ def contact(lang):
         status=status,
     )
 
-@app.route('/<lang>/contactp')
-def contactp(lang):
-    
-    pass
 
 @app.route('/<lang>/selected_works')
 def artworks(lang):
@@ -92,12 +85,12 @@ def artworks(lang):
         paintings=paintings
     )
 
-@app.route('/index')
-def index():
+@app.route('/<lang>/publications')
+def publications(lang):
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
-    lang = 'en'
     return render_template(
-        'index.html',
+        'publications.html',
+        publications="active",
         lang=lang,
         content=tls[lang]
     )

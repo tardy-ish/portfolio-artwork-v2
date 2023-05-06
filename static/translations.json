@@ -19,13 +19,13 @@
             "Lana traces her artistic lineage to her great-grandfather, Mohamad Suleiman Khayat, who contributed to the creation and restoration of traditional Syrian Ajami rooms. His work is showcased at the Metropolitan Museum of Art in New York and the Shangri La Museum of Islamic Art, Culture and Design in Hawaii. Growing up in a family of unique artistic talent had a profound influence on Lana, ultimately choosing art as her form of expression, as her forefathers before her.",
             "Lana has developed an exceptional artistic direction. From her perspective, nature offers music to those who are truly willing to lend an ear. As an introvert, she has found herself more fluent with Mother Nature than Mankind. Her art describes the free-flowing journey of her conversations with the wilderness; each tone and stroke overflowing with meaning beyond human script or language."
         ],
-        "artworks-h": "SELECTED WORKS",
-        "contact-h": "CONTACT",
         "fname": "First Name",
         "email": "Email",
         "msg": "Message",
         "submit": "Submit",
-        "copyright": "Copyright"
+        "copyright": "Copyright",
+        "flag" :"us",
+        "publications":"Publications"
     },
     "ar": {
         "brand": "لانا خيّاط",
@@ -48,13 +48,12 @@
             ".تعلّمت الفنانة اللبنانية فن الخط بنفسها من خلال مشاهدتها لوالدها وجدها يقومان بتنفيذ وترميم غرف العجمي. وتُعرَض أعمال جدها الأكبر، محمد سليمان خياط، في متحف متروبوليتان وجامعة نيويورك ومتحف شانغريلا للفنون والثقافة والتصميم الإسلامي في هاواي .تحول تركيز أعمالها الجديدة من تمثيل الخط والنقوش (فقط) إلى تصوير الخطِ بصفاتٍ وأشكالٍ مختلفة كالتمثيل من خلال الضوء والمناظر الطبيعية والمناظر الخضراء. وهي تركز الآن أكثر فأكثر على الصفات الُزخرفية للون والشكل",
             ".عرضت لانا أعمالها في المملكة العربية السعودية والإمارات العربية المتحدة ولندن ونيويورك"
         ],
-        "artworks-h": "الأعمال",
-        "contact-h": "تواصل",
         "fname": "الاسم ",
         "email": "البريد الإلكتروني",
         "msg": "...اكتب رسالتك هنا",
         "submit": "إرسال",
-        "copyright": "حقوق الطبع والنشر"
+        "copyright": "حقوق الطبع والنشر",
+        "flag" :"lb"
     },
     "es": {
         "brand": "LANA KHAYAT",
@@ -76,12 +75,11 @@
             "Lana remonta su linaje artístico a su bisabuelo, Mohamad Suleiman Khayat, quien contribuyó a la creación y restauración de las habitaciones tradicionales sirias de Ajami. Su trabajo se exhibe en el Museo Metropolitano de Arte de Nueva York y el Museo Shangri La de Arte, Cultura y Diseño Islámicos en Hawái. Crecer en una familia de talento artístico único tuvo una profunda influencia en Lana, y finalmente eligió el arte como su forma de expresión, como sus antepasados ​​antes que ella.",
             "Lana ha desarrollado una dirección artística excepcional. Desde su perspectiva, la naturaleza ofrece música a aquellos que están verdaderamente dispuestos a prestar oídos. Como introvertida, se ha encontrado más fluida con la Madre Naturaleza que con la Humanidad. Su arte describe el viaje fluido de sus conversaciones con la naturaleza; cada tono y trazo rebosan de significado más allá de la escritura o el lenguaje humano."
         ],
-        "artworks-h": "TRABAJOS SELECCIONADOS",
-        "contact-h": "CONTACTO",
         "fname": "Nombre",
         "email": "Correo Electrónico",
         "msg": "Mensaje",
         "submit": "Entregar",
-        "copyright": "Copyright"
+        "copyright": "Copyright",
+        "flag" : "es"
     }
 }
