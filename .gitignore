@@ -5,4 +5,4 @@ paintings_temp.json
 /__pycache__
 env.variables.json
 *.log
-env.*
+env*

@@ -5,6 +5,7 @@ class clientMessage(Message):
     def __init__(self, recepient:str, name:str, message:str):
         super().__init__()
         self.subject = f"Hey {name}!"
+        self.sender = os.environ.get('EMAIL')
         self.body = f"""
 This is an automated message, I generally respond in a day.
 You'll be hearing from me very soon on this mail chain.
@@ -18,7 +19,7 @@ Lana Khayat
 Website  |  lanakhayat.com
         """
         self.recipients = [recepient]
-        self.bcc = [os.environ.get('EMAIL')]
+        self.bcc = [os.environ.get('MAIL_TO')]
         
 
 
