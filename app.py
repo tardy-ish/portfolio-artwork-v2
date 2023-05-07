@@ -56,7 +56,7 @@ def contact(lang):
             name=form_data['name'],
             message=form_data['message']
         )
-        # mail.send(client_message)
+        mail.send(client_message)
         # status = ['d-none','']
 
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
