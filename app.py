@@ -22,7 +22,7 @@ logger.addHandler(fileHandler)
 
 app = Flask(__name__)
 app.secret_key = 'wot be this'
-app.config.from_object(config.DevelopmentConfig)
+app.config.from_object(config.ProductionConfig)
 mail = Mail(app)
 
 
