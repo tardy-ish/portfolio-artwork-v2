@@ -56,6 +56,7 @@ def contact(lang):
             name=form_data['name'],
             message=form_data['message']
         )
+        mail.connect()
         mail.send(client_message)
         # status = ['d-none','']
 
