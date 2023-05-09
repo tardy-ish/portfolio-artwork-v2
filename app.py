@@ -9,6 +9,7 @@ from mailing import clientMessage
 from datetime import datetime
 
 import logging
+import os
 
 #Logging setup
 logger = logging.getLogger()
@@ -21,14 +22,19 @@ fileHandler = logging.FileHandler(f"./logs/{file_name}.log")
 logger.addHandler(fileHandler)
 
 app = Flask(__name__)
-app.secret_key = 'wot be this'
 app.config.from_object(config.ProductionConfig)
+if os.environ.get('env') == 'dev':
+    app.config.from_object(config.DevelopmentConfig)
+app.secret_key = 'wot be this'
 mail = Mail(app)
+
+
 
 
 @app.route('/')
 @app.route('/<lang>')
 def landing(lang='en'):
+    print(app.config['MAIL_DEFAULT_SENDER'])
     return render_template(
         'landing.html',
         lang=lang
@@ -60,7 +66,7 @@ def contact(lang):
             message=form_data['message']
         )
 
-        mail.connect()
+        # mail.connect()
         mail.send(client_message)
         # status = ['d-none','']
 

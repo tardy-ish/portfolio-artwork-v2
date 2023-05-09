@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
     .painting {
         max-height: 400px;
         margin: 10px 0;

@@ -12,12 +12,19 @@ p:lang(ar){
     text-align: right;
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
     #main{
         padding: 10px;
     }
     .about{
         font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #main{
+        margin-top: 50px;
     }
     
 }

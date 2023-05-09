@@ -29,12 +29,15 @@ ul:lang(ar){
     padding-top: 10px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
     .nav{
-        padding-top: 0px;
+        margin-top: 50px;
     }
     .sticky-top{
         display: none;
+    }
+    .contentDiv{
+        margin-top: 80px;
     }
 }
 

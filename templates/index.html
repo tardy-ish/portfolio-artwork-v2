@@ -45,7 +45,7 @@
         </ul>
     </div>
 
-    <nav class="navbar bg-body-white d-md-none d-block">
+    <nav class="navbar fixed-top bg-body-white d-md-none d-block bg-white ">
         <div class="container-fluid">
             <a class="navbar-brand fs-1" href="#">{{content['brand']}} </a>
             <button class="navbar-toggler me-none" type="button" data-bs-toggle="offcanvas"
@@ -90,7 +90,9 @@
         <span class="fi fi-{{content['flag']}}"></span>
         {{content['lang']['changeLang']}}
     </a>
+    <div class="contentDiv">
     {%block dispContent%}{%endblock%}
+    </div>
     <div class="d-none footer py-1 bg-white text-center">
         {{content['copyright']}} © {{content['name']}}
     </div>
