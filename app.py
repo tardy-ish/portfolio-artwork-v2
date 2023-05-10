@@ -34,7 +34,6 @@ mail = Mail(app)
 @app.route('/')
 @app.route('/<lang>')
 def landing(lang='en'):
-    print(app.config['MAIL_DEFAULT_SENDER'])
     return render_template(
         'landing.html',
         lang=lang
@@ -55,20 +54,20 @@ def bio(lang):
 @app.route('/<lang>/contact',methods=['GET','POST'])
 def contact(lang):
     status = ['','d-none']
-    if request.method == 'POST':
-        form_data = dict(request.form)
-        if form_data == {}:
-            form_data = dict(request.args)
-        # print(args_data)
-        client_message = clientMessage(
-            recepient=form_data['email'],
-            name=form_data['name'],
-            message=form_data['message']
-        )
+    # if request.method == 'POST':
+    #     form_data = dict(request.form)
+    #     if form_data == {}:
+    #         form_data = dict(request.args)
+    #     # print(args_data)
+    #     client_message = clientMessage(
+    #         recepient=form_data['email'],
+    #         name=form_data['name'],
+    #         message=form_data['message']
+    #     )
 
-        # mail.connect()
-        mail.send(client_message)
-        # status = ['d-none','']
+    #     # mail.connect()
+    #     mail.send(client_message)
+    #     # status = ['d-none','']
 
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
     return render_template(
