@@ -6,3 +6,4 @@ paintings_temp.json
 env.variables.json
 *.log
 env*
+/trial_error
