@@ -23,7 +23,7 @@ logger.addHandler(fileHandler)
 
 app = Flask(__name__)
 app.config.from_object(config.ProductionConfig)
-if os.environ.get('env') == 'dev':
+if os.getenv('env') == 'dev':
     app.config.from_object(config.DevelopmentConfig)
 app.secret_key = 'wot be this'
 mail = Mail(app)

@@ -18,7 +18,7 @@ Lana Khayat
 Website  |  lanakhayat.com
         """
         self.recipients = [recepient]
-        self.bcc = [os.environ.get('EMAIL')]
+        self.bcc = [os.getenv('EMAIL')]
         
 
 
