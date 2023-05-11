@@ -12,6 +12,14 @@ class Config(object):
     MAIL_USE_TLS = True if os.getenv('TLS').strip() == "True" else False
     MAIL_DEFAULT_SENDER = os.getenv('EMAIL').strip()
 
+    db_user = os.getenv('db_u').strip()
+    db_pass = os.getenv('db_p').strip()
+    db_host = os.getenv('db_h').strip()
+    db_name = os.getenv('db_n').strip()
+    SQLALCHEMY_DATABASE_URI = f'mysql://{db_user}:{db_pass}@{db_host}/{db_name}'
+
+
+
 class ProductionConfig(Config):
     pass
 

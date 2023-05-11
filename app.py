@@ -1,4 +1,5 @@
-from flask import Flask, render_template, redirect, request, flash
+from flask import Flask, render_template, request
+from flask_sqlalchemy import SQLAlchemy
 import json
 
 import config
@@ -26,8 +27,19 @@ app.config.from_object(config.ProductionConfig)
 if os.getenv('env') == 'dev':
     app.config.from_object(config.DevelopmentConfig)
 app.secret_key = 'wot be this'
-mail = Mail(app)
 
+mail = Mail(app)
+db = SQLAlchemy(app)
+
+
+class artwork(db.Model):
+    order = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80), unique=True)
+    size = db.Column(db.String(20))
+    details = db.Column(db.String(40))
+    year = db.Column(db.String)
+    file = db.Column(db.String(40), unique=True)
+    pass
 
 
 
