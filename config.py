@@ -16,7 +16,7 @@ class Config(object):
     db_pass = os.getenv('db_p').strip()
     db_host = os.getenv('db_h').strip()
     db_name = os.getenv('db_n').strip()
-    SQLALCHEMY_DATABASE_URI = f'mysql://{db_user}:{db_pass}@{db_host}/{db_name}'
+    SQLALCHEMY_DATABASE_URI = f'mysql+mysqlconnector://{db_user}:{db_pass}@{db_host}/{db_name}'
 
 
 
