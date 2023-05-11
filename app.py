@@ -33,11 +33,11 @@ db = SQLAlchemy(app)
 
 
 class artwork(db.Model):
-    order = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(80), unique=True)
+    order = db.Column(db.Integer, unique=True)
+    name = db.Column(db.String(80), primary_key=True)
     size = db.Column(db.String(20))
     details = db.Column(db.String(40))
-    year = db.Column(db.String)
+    year = db.Column(db.String(10))
     file = db.Column(db.String(40), unique=True)
     pass
 
@@ -94,7 +94,9 @@ def contact(lang):
 @app.route('/<lang>/selected_works')
 def artworks(lang):
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
-    paintings = json.load(open('./static/assets/paintings.json',encoding='utf-8'))
+    # paintings = json.load(open('./static/assets/paintings.json',encoding='utf-8'))
+    paintings = artwork.query.order_by(artwork.order).all()
+    paintings = [painting.__dict__ for painting in paintings]
     return render_template(
         'artworks.html',
         art="active",
