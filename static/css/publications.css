@@ -36,9 +36,19 @@ section:nth-of-type(even) .images{
     .contentDiv {
         margin-top: 100px;
     }
-    .description{
-        font-size: 1.25rem;
-        padding: 1.5rem;
-        text-align: center;
+    .images{
+        order: 1!important;
     }
+    .description{
+        font-size: 1.25rem!important;
+        padding: 1.5rem!important;
+        text-align: center!important;
+        order: 2!important;
+    }
+
+    /* .one .description{
+        text-align: center!important;
+        font-size: 1.25rem!important;
+    }
+     */
 }
