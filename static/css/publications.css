@@ -6,7 +6,6 @@ img{
     padding: 5px;
 }
 
-
 .accordion-body{
     padding: 0 15px;
 }
@@ -15,7 +14,6 @@ img{
     padding: 0.5rem;
     width: auto;
 }
-
 
 .accordion-button:not(.collapsed) {
     color: #212529;
@@ -34,7 +32,6 @@ section:nth-of-type(odd) {
     & .list-group-item{
         text-align: start;
     }
-
 }
 
 section:nth-of-type(even) {
