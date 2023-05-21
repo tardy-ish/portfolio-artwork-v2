@@ -70,4 +70,10 @@ section:nth-of-type(even) {
         text-align: center!important;
         order: 2!important;
     }
+    .accordion-button{
+        margin: 0!important;
+    }
+    .list-group-item{
+        text-align: start!important;
+    }
 }
