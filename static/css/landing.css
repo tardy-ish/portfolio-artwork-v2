@@ -1,6 +1,9 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
     font-family: 'Bodoni Moda', 'Noto Kufi Arabic', serif;
 }
+
 
 .menu-en:lang(en){
     display: inline !important;
@@ -47,4 +50,8 @@ body{
 
 .brand-ar{
     font-size: 3rem;
+}
+
+.lang-select *{
+    font-size: clamp(15px,3vw,18px);
 }

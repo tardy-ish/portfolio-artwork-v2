@@ -1,36 +1,59 @@
-.landscape img{
+img{
     padding: 15px;
 }
 
-
-.description{
-    font-size: 2.5rem;
+.list-group-item{
+    padding: 5px;
 }
 
-
-
-section:nth-of-type(odd) .description{
-    text-align: start;
-    order: 2;
+.accordion-button{
+    padding: 0.5rem;
+    width: auto;
 }
 
-section:nth-of-type(even) .description{
-    text-align: end;
-    order: 1;
+.accordion-body{
+    padding: 0 15px;
 }
 
-section:nth-of-type(odd) .images{
-    order: 1;
+section:nth-of-type(odd) {
+    & .description{
+        text-align: start;
+        order: 2;
+    }
+    & .images{
+        order: 1;
+    }
+    & .list-group-item{
+        text-align: start;
+    }
+
 }
 
-section:nth-of-type(even) .images{
-    order: 2;
+section:nth-of-type(even) {
+    & .description{
+        text-align: end;
+        order: 1;
+    }
+    & .images{
+        order: 2;
+    }
+    & .list-group-item{
+        text-align: end;
+    }
+    & .accordion-button{
+        margin-left: auto;
+    }
 }
 
-.one .description{
-    font-size: 1.75rem;
+.accordion-button:not(.collapsed) {
+    color: #212529;
+    background-color: transparent;
+    box-shadow: none;
 }
 
+.mention{
+    color: #b2b9c2;
+}
 
 @media (max-width: 576px){
     .contentDiv {
@@ -40,10 +63,8 @@ section:nth-of-type(even) .images{
         order: 1!important;
     }
     .description{
-        font-size: 1.25rem!important;
         padding: 1.5rem!important;
         text-align: center!important;
         order: 2!important;
     }
-
 }
