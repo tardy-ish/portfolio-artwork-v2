@@ -5,29 +5,14 @@
 }
 
 
-.menu-en:lang(en){
+.menu-en:lang(en) , .menu-ar:lang(ar) , .menu-ar:lang(es){
     display: inline !important;
 }
 
-.menu-ar:lang(ar){
-    display: inline !important;
-}
-
-.menu-es:lang(es){
-    display: inline !important;
-}
-
-.drop-en:lang(en){
+.drop-en:lang(en) , .drop-ar:lang(ar) , .drop-es:lang(es){
     display: none;
 }
 
-.drop-ar:lang(ar){
-    display: none;
-}
-
-.drop-es:lang(es){
-    display: none;
-}
 
 .landing{
     padding-top: 30vh;
