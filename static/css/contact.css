@@ -1,6 +1,9 @@
 #contactForm{
     max-width: 600px;
 }
+
+
+
 input:lang(ar){
     text-align: right;
 }
@@ -22,6 +25,16 @@ textarea:lang(ar)::placeholder{
 h4{
     margin-top: 100px;
 }
+
+.weblinks{
+    margin-left: 40px;
+}
+
+.weblinks > a{
+    padding: 0 clamp(5px,0.1vw,8px);
+}
+
+
 
 @media (max-width: 576px){
     #contactForm{
