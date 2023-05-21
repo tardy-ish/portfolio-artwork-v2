@@ -6,13 +6,21 @@ img{
     padding: 5px;
 }
 
+
+.accordion-body{
+    padding: 0 15px;
+}
+
 .accordion-button{
     padding: 0.5rem;
     width: auto;
 }
 
-.accordion-body{
-    padding: 0 15px;
+
+.accordion-button:not(.collapsed) {
+    color: #212529;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 section:nth-of-type(odd) {
@@ -45,14 +53,9 @@ section:nth-of-type(even) {
     }
 }
 
-.accordion-button:not(.collapsed) {
-    color: #212529;
-    background-color: transparent;
-    box-shadow: none;
-}
-
 .mention{
     color: #b2b9c2;
+    font-style: italic;
 }
 
 @media (max-width: 576px){
