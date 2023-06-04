@@ -88,11 +88,26 @@
                             <a class="nav-link pt-3 px-5 {{contact}}"
                                 href="/{{lang}}/contact">{{content['contact']}}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link pt-3 px-5 {{home}}" aria-current="page" href="/">
-                                <span class="fi fi-{{content['flag']}}"></span>
-                                {{content['lang']['changeLang']}}
+                        <li class="nav-item dropdown pt-3 px-5">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="menu-en d-none"><span class="fi fi-us"></span>English</div>
+                                <div class="menu-ar d-none"><span class="fi fi-lb"></span>العربية</div>
+                                <div class="menu-es d-none"><span class="fi fi-es"></span>Español</div>
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li class="drop-en"><a class="dropdown-item" href="/en">
+                                        <span class="fi fi-us"></span>
+                                        English
+                                    </a></li>
+                                <li class="drop-ar"><a class="dropdown-item" href="/ar">
+                                        <span class="fi fi-lb"></span>
+                                        العربية
+                                    </a></li>
+                                <li class="drop-es"><a class="dropdown-item" href="/es">
+                                        <span class="fi fi-es"></span>
+                                        Español
+                                    </a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
