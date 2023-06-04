@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 import json
 
@@ -46,11 +46,7 @@ class artwork(db.Model):
 @app.route('/')
 @app.route('/<lang>')
 def landing(lang='en'):
-    return render_template(
-        'landing.html',
-        lang=lang,
-        _redirect='home'
-    )
+    return redirect(f'/{lang}/home')
 
 
 @app.route('/<lang>/home')
