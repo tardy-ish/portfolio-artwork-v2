@@ -1,0 +1,75 @@
+img{
+    padding: 15px;
+}
+
+.list-group-item{
+    padding: 5px;
+}
+
+.accordion-body{
+    padding: 0 15px;
+}
+
+.accordion-button{
+    padding: 0.5rem;
+    width: auto;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #212529;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+section:nth-of-type(odd) .description{
+    text-align: start;
+    order: 2;
+}
+
+section:nth-of-type(odd) .images{
+    order: 1;
+}
+section:nth-of-type(odd) .list-group-item{
+    text-align: start;
+}
+
+
+section:nth-of-type(even) .description{
+    text-align: end;
+    order: 1;
+}
+section:nth-of-type(even) .images{
+    order: 2;
+}
+section:nth-of-type(even) .list-group-item{
+    text-align: end;
+}
+section:nth-of-type(even) .accordion-button{
+    margin-left: auto;
+}
+
+
+.mention{
+    color: #b2b9c2;
+    font-style: italic;
+}
+
+@media (max-width: 576px){
+    .contentDiv {
+        margin-top: 100px;
+    }
+    .images{
+        order: 1!important;
+    }
+    .description{
+        padding: 0 1.5rem!important;
+        text-align: center!important;
+        order: 2!important;
+    }
+    .accordion-button{
+        margin: 0!important;
+    }
+    .list-group-item{
+        text-align: start!important;
+    }
+}

@@ -4,6 +4,9 @@
 
 
 .img-div{
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-30%);
     max-width: 450px;
     width: 100%;
 }

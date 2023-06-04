@@ -5,7 +5,7 @@
 {%endblock%}
 
 {%block title%}
-{{content['contact']}} | {{content['contact']}}
+{{content['contact']}} | {{content['name']}}
 {%endblock%}
 
 {%block dispContent%}
@@ -13,7 +13,7 @@
 <br>
 <div class="fs-5 d-flex justify-content-center weblinks">
     |
-    <a href="https://bettermailto.com/user/6469a70931dc163e3d49769c" class="link-dark link-underline-opacity-0 link-underline-opacity-75-hover" target="_blank"> Email </a>
+    <a class="link-dark link-underline-opacity-0 link-underline-opacity-75-hover" href="https://bettermailto.com/user/6469a70931dc163e3d49769c" target="_blank"> Email </a>
     |
     <a class="link-dark link-underline-opacity-0 link-underline-opacity-75-hover" href="https://instagram.com/lanakhayatstudio" target="_blank">Instagram</a> 
     |
@@ -34,28 +34,8 @@
     </div>
     <button type="submit" class="btn btn-outline-dark rounded-0 submit" data-bs-toggle="modal" data-bs-target="#email-modal">{{content['submit']}}</button>
 </form>
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#email-modal">
-    Launch static backdrop modal
-  </button> -->
-  
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="email-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="email-modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            
-            <div class="modal-body d-flex align-items-center justify-content-center">
-                <div class="{{status}}">
-                    <div class="spinner-border" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                    <p>Processing.....</p>
-                </div>
-        </div>
-            
-        </div>
-    </div>
-  </div> -->
+
+<!--  -->
 {%endblock%}
 
 {%block js%}

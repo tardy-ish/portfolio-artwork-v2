@@ -1,0 +1,33 @@
+<!-- Carousel -->
+            <div id="carousel-painting" class="mx-auto carousel slide" data-bs-theme="dark">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-painting"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-painting"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-inner">
+                {% for painting in paintings %}
+                    <div class="carousel-item">
+                        <div class="container-flex mx-auto">
+                            <div class="row align-items-center" id="artwork-view">
+                                <div class="col-md-6 col-12 d-flex justify-content-center">
+                                    <img class="painting img-fluid"
+                                        src="{{ url_for('static',filename = 'assets/'+src+'/'+painting['file']) }}" alt="">
+                                </div>
+                                <div class="col-md-6 col-12 mx-auto">
+                                    <h2 class="d-flex align-items-center justify-content-center">{{ painting['name'] }}
+                                        ({{painting['year']}})</h2>
+                                    <p class="d-flex align-items-center justify-content-center">{{ painting['size'] }}</p>
+                                    <p class="d-flex align-items-center justify-content-center">{{ painting['details'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>

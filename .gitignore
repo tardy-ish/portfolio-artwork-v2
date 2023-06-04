@@ -4,6 +4,7 @@ paintings_temp.json
 /static/assets/images
 /__pycache__
 env.variables.json
+variables.sh
 *.log
 env*
 /trial_error

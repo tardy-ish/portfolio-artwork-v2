@@ -48,7 +48,19 @@ class artwork(db.Model):
 def landing(lang='en'):
     return render_template(
         'landing.html',
-        lang=lang
+        lang=lang,
+        _redirect='home'
+    )
+
+
+@app.route('/<lang>/home')
+def home(lang):
+    tls = json.load(open('./static/translations.json',encoding='utf-8'))
+    return render_template(
+        'home.html',
+        home="active",
+        lang=lang,
+        content=tls[lang],
     )
 
 
@@ -63,24 +75,9 @@ def bio(lang):
         content=tls[lang],
     )
 
-@app.route('/<lang>/contact',methods=['GET','POST'])
+@app.route('/<lang>/contact')
 def contact(lang):
     status = ['','d-none']
-    # if request.method == 'POST':
-    #     form_data = dict(request.form)
-    #     if form_data == {}:
-    #         form_data = dict(request.args)
-    #     # print(args_data)
-    #     client_message = clientMessage(
-    #         recepient=form_data['email'],
-    #         name=form_data['name'],
-    #         message=form_data['message']
-    #     )
-
-    #     # mail.connect()
-    #     mail.send(client_message)
-    #     # status = ['d-none','']
-
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
     return render_template(
         'contact.html',
@@ -95,15 +92,28 @@ def contact(lang):
 def artworks(lang):
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
     # paintings = json.load(open('./static/assets/paintings.json',encoding='utf-8'))
-    paintings = artwork.query.order_by(artwork.order).all()
-    paintings = [painting.__dict__ for painting in paintings]
+    # paintings = artwork.query.order_by(artwork.order).all()
+    # paintings = [painting.__dict__ for painting in paintings]
+    paintings = os.listdir('./static/assets/images/gallery_prepped')
+    paintings = [painting for painting in paintings if painting.endswith('.jpg')]
+    print(paintings)
     return render_template(
-        'artworks.html',
+        'artworks2.html',
         art="active",
         lang=lang,
         content=tls[lang],
-        src='images/artworks_prepped',
+        src='images/gallery_prepped',
         paintings=paintings
+    )
+
+@app.route('/<lang>/exhibitions')
+def exhibitions(lang):
+    tls = json.load(open('./static/translations.json',encoding='utf-8'))
+    return render_template(
+        'exhibitions.html',
+        exhibitions="active",
+        lang=lang,
+        content=tls[lang]
     )
 
 @app.route('/<lang>/publications')

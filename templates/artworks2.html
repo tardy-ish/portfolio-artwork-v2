@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% block css %}
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename = 'css/artworks2.css') }}">
+{% endblock %}
+{% block title %}{{ content['artworks'] }} | {{ content['name'] }}{% endblock %}
+{% block dispContent %}
+
+<!-- Image Grid -->
+<div class="img-grid">
+    {%for painting in paintings%}
+        <img class="painting" src="{{url_for('static',filename='assets/'+src+'/'+painting)}}" alt="">
+    {%endfor%}
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="gallery modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="" alt="selected image" class="modal-img">
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}<script src="{{url_for('static',filename = 'js/artworks2.js')}}"></script>{% endblock %}
