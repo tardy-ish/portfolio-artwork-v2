@@ -6,7 +6,8 @@
 .img-div{
     position: fixed;
     top: 50vh;
-    transform: translateY(-30%);
+    left: 25vw;
+    transform: translate(-30%,-30%);
     max-width: 450px;
     width: 100%;
 }

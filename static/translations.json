@@ -54,7 +54,8 @@
         "msg": "...اكتب رسالتك هنا",
         "submit": "إرسال",
         "copyright": "حقوق الطبع والنشر",
-        "flag" :"lb"
+        "flag" :"lb",
+        "exhibitions":"مَعْرَض"
     },
     "es": {
         "brand": "LANA KHAYAT",
@@ -81,6 +82,7 @@
         "msg": "Mensaje",
         "submit": "Entregar",
         "copyright": "Copyright",
-        "flag" : "es"
+        "flag" : "es",
+        "exhibitions": "Exhibiciones"
     }
 }

@@ -4,6 +4,13 @@
     font-family: 'Bodoni Moda', 'Noto Kufi Arabic', serif;
 }
 
+.menu-en:lang(en) , .menu-ar:lang(ar) , .menu-ar:lang(es){
+    display: inline !important;
+}
+
+.drop-en:lang(en) , .drop-ar:lang(ar) , .drop-es:lang(es){
+    display: none;
+}
 
 .nav{
     padding-top: 5px;

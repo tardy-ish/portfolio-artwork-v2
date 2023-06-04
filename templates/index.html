@@ -99,10 +99,31 @@
             </div>
         </div>
     </nav>
-    <a class="btn topcorner d-md-block d-none" href="/"> 
-        <span class="fi fi-{{content['flag']}}"></span>
-        {{content['lang']['changeLang']}}
-    </a>
+        <div class="lang-select topcorner d-md-block d-none">
+            <div class="dropdown">
+                <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="menu-en d-none"><span class="fi fi-us"></span>English</span>
+                    <span class="menu-ar d-none"><span class="fi fi-lb"></span>العربية</span>
+                    <span class="menu-es d-none"><span class="fi fi-es"></span>Español</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li class="drop-en"><a class="dropdown-item" href="/en">
+                            <span class="fi fi-us"></span>
+                            English
+                        </a></li>
+                    <li class="drop-ar"><a class="dropdown-item" href="/ar">
+                            <span class="fi fi-lb"></span>
+                            العربية
+                        </a></li>
+                    <li class="drop-es"><a class="dropdown-item" href="/es">
+                            <span class="fi fi-es"></span>
+                            Español
+                        </a></li>
+                </ul>
+                
+            </div>
+        </div>
     <div class="contentDiv">
     {%block dispContent%}{%endblock%}
     </div>
