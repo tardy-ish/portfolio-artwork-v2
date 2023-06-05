@@ -1,6 +1,7 @@
 document.addEventListener("click", function (e) {
     if (e.target.classList.contains("painting")) {
-        const src = e.target.getAttribute("src");
+        const img = e.target;
+        const src = img.getAttribute("src");
         const title = e.target.getAttribute("data-title");
         const size = e.target.getAttribute("data-size");
         const details = e.target.getAttribute("data-details");

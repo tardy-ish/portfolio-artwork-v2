@@ -92,7 +92,7 @@ def artworks(lang):
     # paintings = [painting.__dict__ for painting in paintings]
     # paintings = os.listdir('./static/assets/images/gallery_prepped')
     # paintings = [painting for painting in paintings if painting.endswith('.jpg')]
-    print(paintings)
+    # print(paintings)
     return render_template(
         'artworks2.html',
         art="active",
