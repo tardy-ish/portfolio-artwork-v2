@@ -11,44 +11,47 @@
 {% block dispContent %}
 <div class="mainTile" id="mainTile-1">
     <div class="tile tile-1">
-        <a href="/{{lang}}/selected_works" class="link-target">
-            <img class="img-no-hover" src="{{url_for('static',filename='assets/images/hometiles_prepped/artDubai.jpg')}}" alt="">
+        <a href="/{{lang}}/selected_works" class="gen-link">
+            <img src="{{url_for('static',filename='assets/images/hometiles_prepped/DSC_1586.jpg')}}" alt="">
             <div class="textDiv">
-                <div>Exhibited</div>
-                <div>in</div>
-                <div>Art Dubai</div>
+                Selected Works
             </div>
         </a>
     </div>
     <div class="tile tile-3">
-        <a class="link-target" href="https://www.cromwellplace.com/whats-on/artist-talk-lana-khayat-space-and-legitimacy-in-creating-art-as-a-woman-artist" target="_blank" rel="noopener noreferrer">
-            <img class="img-no-hover" src="{{url_for('static',filename='assets/images/hometiles_prepped/talk_at_cromwell.jpg')}}" alt="">
+        <a class="gen-link" href="https://www.cromwellplace.com/whats-on/artist-talk-lana-khayat-space-and-legitimacy-in-creating-art-as-a-woman-artist" target="_blank" rel="noopener noreferrer">
+            <img  src="{{url_for('static',filename='assets/images/hometiles_prepped/talk_at_cromwell.jpg')}}" alt="">
         </a>
     </div>
 </div>
 <div class="mainTile" id="mainTile-2">
     <div class="tile tile-1">
-        <img class="img-hover" src="{{url_for('static',filename='assets/images/hometiles_prepped/aquisition_front.jpg')}}" alt="">
-        <div class="textDiv">
-            We are excited to share that this artwork is joining other very important artworks in a private collection
-        </div>
+        <img  src="{{url_for('static',filename='assets/images/hometiles_prepped/the_calm_in_the_chaos.jpg')}}" alt="">
     </div>
     <div class="tile tile-2">
-        <img class="img-no-hover" src="{{url_for('static',filename='assets/images/hometiles_prepped/children2.jpg')}}" alt="">
-        <div class="textDiv">
-            Art School Coming Very Soon!
+        <img src="{{url_for('static',filename='assets/images/hometiles_prepped/children1.jpg')}}" alt="">
+        <div class="hover-effect">
+            <img src="{{url_for('static',filename='assets/images/hometiles_prepped/DSC_1579.jpg')}}" alt="">
+            <div class="textDiv" >Art School Coming Very Soon!</div>
         </div>
-        <img class="img-hover" src="{{url_for('static',filename='assets/images/hometiles_prepped/children1.jpg')}}" alt="">
     </div>
 </div>
 <div class="mainTile" id="mainTile-3">
     <div class="tile tile-1">
-        <div class="textDiv">
-            Showcase in,<br>
-            Cromwell Place,<br>
-            London, June 2023<br>
-        </div>
-        <img class="img-hover" src="{{url_for('static',filename='assets/images/hometiles_prepped/showcase_painting.jpeg')}}" alt="">
+            <div class="hover-effect">
+                <img src="{{url_for('static',filename='assets/images/hometiles_prepped/showcase_painting.jpeg')}}" alt="">
+                <div class="textDiv">
+                    Showcase in,<br>
+                    Cromwell Place,<br>
+                    London, June 2023<br>
+                </div>
+            </div>
+            <div class="textDiv">
+                Showcase in,<br>
+                Cromwell Place,<br>
+                London, June 2023<br>
+            </div>
+            
     </div>
 </div>
 

@@ -18,7 +18,7 @@
 .img-grid{
     margin: 0 auto;
     display: grid;
-    gap: 15px;
+    gap: 20px;
     grid-template-columns: repeat(4,var(--dims));
 /*     grid-template-rows: repeat(30,var(--dims)); */
     justify-content: center;
@@ -29,7 +29,7 @@ img{
     object-fit: cover;
     width: var(--dims);
     height: var(--dims);
-    
+    box-shadow: 0 1px 10px;
 }
 
 .painting{

@@ -8,18 +8,14 @@
 a{
     text-decoration: none !important;;
 }
-.link-target{
-    text-decoration: none !important;
-    width: 100%;
-    height: 100%;
-    transition: all 200ms ease-in;
+
+.gen-link{
+    transition: all 210ms ease-in;
 }
 
-.link-target.gen-hover{
-/*     filter: blur(1px); */
+.gen-link.gen-hover{
     transform: scale(1.05);
 }
-
 .contentDiv{
     display: grid;
     justify-content: center;
@@ -33,21 +29,45 @@ a{
 
 .tile {
     display: flex;
-/*     flex-direction: column; */
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    border: 1px black solid !important;
     object-fit: cover;
     position: relative;
 }
 
-img{
-    object-fit: cover;
+.tile>a{
+    display: flex;
+    color: white;
     width: 100%;
     height: 100%;
 }
+
+.textDiv{
+    margin: auto;
+    font-size: 2rem;
+}
+
+.tile>.hover-effect{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: all 800ms ease-in;
+}
+img{
+    position: absolute;
+    object-fit: cover;
+    object-position: left top;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.textDiv{
+    color: white;
+}
+
 
 .mainTile{
     height: 100%;
@@ -67,45 +87,12 @@ img{
 }
 #mainTile-1>.tile-1{
     grid-area: tile-1;
-    
     font-size: 2rem;
-}
-
-#mainTile-1>.tile-1>.link-target>.textDiv{
-    margin: 0;
-    padding: 0 80px;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 1px 1px 2px black;
-}
-#mainTile-1>.tile-1>.link-target>.textDiv>div{
-/*     text-decoration: none !important; */
-    color: white;
-}
-
-
-#mainTile-1>.tile-1>.link-target>.textDiv>div:nth-child(1){
-    align-self: start;
-}
-
-#mainTile-1>.tile-1>.link-target>.textDiv>div:nth-child(3){
-    align-self: end;
 }
 
 #mainTile-1>.tile-3{
     grid-area: tile-3;
 }
-#mainTile-1>.tile-3>a>img,
-#mainTile-2>.tile-2>img
-{
-    object-position: left top;
-}
-
 
 #mainTile-2 {
     display: grid;
@@ -119,35 +106,29 @@ img{
 #mainTile-2>.tile-1{
     grid-area: tile-1;
 }
-
-#mainTile-2>.tile-2>.textDiv{
-    margin-top: 90px;
+#mainTile-2>.tile-2>.hover-effect>.textDiv{
+    color: black;
+    background-color: white;
 }
 
-.img-hover{
+#mainTile-3>.tile-1>.hover-effect{
     position: absolute;
-    transition: filter, opacity;
-    transition-duration: 1s;
 }
 
-.img-no-hover{
-    position: absolute;
-    z-index: -2;
+#mainTile-3>.tile-1>.textDiv{
+    color: black;
 }
 
-.img-hover.is-clicked{
-    filter: blur(1px);
+.hover-effect.is-clicked{
+    filter: blur(3px);
     opacity: 0.1;
 }
 
-.textDiv{
-    padding-left: 25px;
-    font-size: 1.5rem;
-    background-color: white;
-    text-transform: uppercase;
-    position: absolute;
-    z-index: -1;
+.link-light > img:nth-child(1){
+    height: 100%;
+    width: 100%;
 }
+
 
 @media (max-width: 768px){
     .contentDiv{

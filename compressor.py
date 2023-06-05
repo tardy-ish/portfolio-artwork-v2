@@ -1,6 +1,6 @@
 from PIL import Image
 import os
-src = './static/assets/images/exhibitions'
+src = './static/assets/images/artworks'
 des = './static/assets/images/exhibitions_prepped'
 max_size = (800, 800)
 qual = 15

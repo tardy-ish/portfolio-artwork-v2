@@ -1,5 +1,5 @@
-var tiles = document.querySelectorAll('.img-hover');
-var gen_links = document.querySelectorAll('.link-target');
+var tiles = document.querySelectorAll('.hover-effect');
+var gen_links = document.querySelectorAll('.gen-link');
 
 if ("ontouchstart" in document.documentElement)
 {

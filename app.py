@@ -50,7 +50,7 @@ def landing(lang='en'):
 
 
 @app.route('/<lang>/home')
-def home(lang):
+def home(lang='en'):
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
     return render_template(
         'home.html',
