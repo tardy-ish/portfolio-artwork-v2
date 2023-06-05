@@ -48,6 +48,9 @@ section:nth-of-type(even) .accordion-button{
     margin-left: auto;
 }
 
+section:nth-last-child(1){
+    padding-bottom: 50px;
+}
 
 .mention{
     color: #b2b9c2;

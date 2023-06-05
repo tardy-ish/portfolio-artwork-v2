@@ -107,9 +107,10 @@ img{
     grid-area: tile-1;
 }
 #mainTile-2>.tile-2>.hover-effect>.textDiv{
-    color: black;
-    background-color: white;
-    font-size: 1.5rem;
+    color: white;
+    margin-top: 180px;
+/*     background-color: white; */
+    font-size: clamp(1.2rem,3vw,1.5rem);
 }
 
 #mainTile-3>.tile-1>.hover-effect{
