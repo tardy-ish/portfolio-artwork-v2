@@ -27,6 +27,10 @@ p:lang(ar){
 }
 
 @media (max-width: 768px){
+    .img-div{
+        position: initial;
+        transform: none;
+    }
     #main{
         margin-top: 50px;
     }
