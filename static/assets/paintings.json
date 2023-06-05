@@ -1,106 +1,127 @@
 [{
     "name": "Outpour Of Soul",
     "year": "2022",
-    "size": "100CM x 160CM",
+    "size": "145CM x 165CM",
     "details": "Aquarelle on Paper",
-    "file": "outpour_of_soul.jpg",
-    "order": 1
+    "file": "Soul_W145_x_H165.jpg"
 }, {
     "name": "Birds Of Paradise",
     "year": "2023",
-    "size": "100CM x 60CM",
+    "size": "150CM x 100CM",
     "details": "Oil On Canvas",
-    "file": "birds_of_paradise.jpg",
-    "order": 2
+    "file": "Birds_of_Paradise_150x_100_copy.jpg"
 }, {
     "name": "Enchanted Garden",
     "year": "2021",
     "size": "220CM x 120CM",
     "details": "Aquarelle on Paper",
-    "file": "enchanted_garden.jpg",
-    "order": 3
+    "file": "ENCHANTED_GARDEN.jpg"
 }, {
     "name": "Freeflow",
     "year": "2023",
-    "size": "200CM x 200CM",
+    "size": "175CM x 145CM",
     "details": "Oil and Glycero on Canvas",
-    "file": "freeflow.jpg",
-    "order": 4
+    "file": "Freeflow_175Wx145Hcm-oil_on_canvas-small2_copy_2.jpg"
 }, {
     "name": "La Voile",
     "year": "2023",
-    "size": "190CM x 150CM",
+    "size": "200CM x 180CM",
     "details": "Acrylic and Glycero on Canvas",
-    "file": "la_voile.jpg",
-    "order": 5
+    "file": "La_Voile_200_x_180cm_copy.jpg"
 }, {
     "name": "Sea Of Love",
     "year": "2020",
     "size": "260CM x 120CM",
     "details": "Aquarelle on Paper",
-    "file": "sea_of_love.jpg",
-    "order": 6
+    "file": "SEA_OF_LOVE.jpg"
 }, {
     "name": "The Apple Tree",
     "year": "2023",
-    "size": "175CM x 175CM",
+    "size": "200CM x 200CM",
     "details": "Acrylic and Glycero on Canvas",
-    "file": "the_apple_tree.jpg",
-    "order": 7
+    "file": "Apple_Tree_200X200cm_copy.jpg"
 }, {
     "name": "The Awakening Of Heart",
     "year": "2022",
     "size": "200CM x 130CM",
     "details": "Acrylic and Glycero on Canvas",
-    "file": "the_awakening_of_heart.jpg",
-    "order": 8
+    "file": "Awakening_200H_x_130W_copy.jpg"
 }, {
     "name": "The Calm In The Chaos",
     "year": "2022",
     "size": "100CM x 100CM",
     "details": "Acrylic on Linen",
-    "file": "the_calm_in_the_chaos.jpg",
-    "order": 9
+    "file": "THE_CALM_IN_THE_CHAOS.jpg"
 }, {
     "name": "The Human Heart",
     "year": "2023",
     "size": "180CM x 120CM",
     "details": "Acrylic on Linen",
-    "file": "the_human_heart.jpg",
-    "order": 10
+    "file": "THE_HUMAN_HEART.jpg"
 }, {
     "name": "The Solitary Seaker",
     "year": "2018",
     "size": "220CM x 200CM",
     "details": "Oil and Glycero on Canvas",
-    "file": "the_solitary_seaker.jpg",
-    "order": 11
+    "file": "THE_SOLITARY_SEAKER.jpg"
 }, {
     "name": "The Thirst For Wisdom",
     "year": "2021",
     "size": "100CM x 150CM",
     "details": "Aquarelle on Paper",
-    "file": "the_thirst_for_wisdom.jpg",
-    "order": 12
+    "file": "THE_THIRST_FOR_WISDOM.jpg"
 }, {
     "name": "The Welcoming Of Wisdom",
     "year": "2023",
     "size": "150CM x 100CM",
     "details": "Acrylic and Glycero on Canvas",
-    "file": "the_welcoming_of_wisdom.jpg",
-    "order": 13
+    "file": "THE_WELCOMING_OF_WISDOM.jpg"
 }, {
     "name": "Tranquility",
     "year": "2017",
-    "size": "200CM x 200CM",
+    "size": "150CM x 150CM",
     "details": "Acrylic and Glycero on Canvas",
-    "file": "tranquility.jpg",
-    "order": 14
+    "file": "Tranquility_W150xH150cm.jpg"
 }, {
     "name": "Under The Sea",
     "year": "2023",
-    "size": "250CM x 170CM",
+    "size": "220CM x 180CM",
     "details": "Acrylic on Canvas",
-    "file": "under_the_sea.jpg",
-    "order": 15
+    "file": "Under_the_Sea_copy_220x180_copy.jpg"
+}, {
+    "name": "Mystical Streams",
+    "year": "2022",
+    "size": "150CM x 200CM",
+    "details": "Oil On Canvas",
+    "file": "Existence_150W_x_200H_copy_2.jpg"
+}, {
+    "name": "Lemon Tree",
+    "year": "2023",
+    "size": "200CM x 120CM",
+    "details": "Oil On Canvas",
+    "file": "Lemon_Tree_copy_180_x120_copy.jpg"
+}, {
+    "name": "Mankind",
+    "year": "2022",
+    "size": "160CM x 160CM",
+    "details": "Oil On Canvas",
+    "file": "Mankind_160x160cm_oil_on_canvas_copy2_copy.jpg"
+}, {
+    "name": "Salam",
+    "year": "2023",
+    "size": "150CM x 150CM",
+    "details": "Acrylic on Canvas",
+    "file": "SalamNew_copy150_x_150cm_copy.jpg"
+}, {
+    "name": "Dreams of light",
+    "year": "2022",
+    "size": "200CM x 200CM",
+    "details": "Oil On Canvas",
+    "file": "DSC_1579.jpg"
+}, {
+    "name": "Cherry Blossoms in the Meadow",
+    "year": "2022",
+    "size": "180CM x 120CM",
+    "details": "Acrylic on Canvas",
+    "file": "DSC_1588.jpg"
 }]

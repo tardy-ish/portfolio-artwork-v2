@@ -130,7 +130,9 @@ img{
     height: 100%;
     width: 100%;
 }
-
+.showcase{
+    font-size: 3rem;
+}
 
 @media (max-width: 768px){
     .contentDiv{

@@ -9,7 +9,12 @@
 <!-- Image Grid -->
 <div class="img-grid">
     {%for painting in paintings%}
-        <img class="painting" src="{{url_for('static',filename='assets/'+src+'/'+painting)}}" alt="">
+        <img class="painting" 
+        src="{{url_for('static',filename='assets/'+src+'/'+painting['file'])}}" 
+        data-title="{{painting['name']}} ({{painting['year']}})"
+        data-size="{{painting['size']}}"
+        data-details="{{painting['details']}}"
+        alt="">
     {%endfor%}
 </div>
 
@@ -21,6 +26,9 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <img src="" alt="selected image" class="modal-img">
+            <p class="modal-img-title text-center fs-3"></p>
+            <p class="modal-size text-center fs-5"></p>
+            <p class="modal-details text-center fs-4"></p>
         </div>
     </div>
 </div>

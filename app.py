@@ -87,11 +87,11 @@ def contact(lang):
 @app.route('/<lang>/selected_works')
 def artworks(lang):
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
-    # paintings = json.load(open('./static/assets/paintings.json',encoding='utf-8'))
+    paintings = json.load(open('./static/assets/paintings.json',encoding='utf-8'))
     # paintings = artwork.query.order_by(artwork.order).all()
     # paintings = [painting.__dict__ for painting in paintings]
-    paintings = os.listdir('./static/assets/images/gallery_prepped')
-    paintings = [painting for painting in paintings if painting.endswith('.jpg')]
+    # paintings = os.listdir('./static/assets/images/gallery_prepped')
+    # paintings = [painting for painting in paintings if painting.endswith('.jpg')]
     print(paintings)
     return render_template(
         'artworks2.html',
