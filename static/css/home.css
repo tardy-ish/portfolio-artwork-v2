@@ -109,6 +109,7 @@ img{
 #mainTile-2>.tile-2>.hover-effect>.textDiv{
     color: black;
     background-color: white;
+    font-size: 1.5rem;
 }
 
 #mainTile-3>.tile-1>.hover-effect{
