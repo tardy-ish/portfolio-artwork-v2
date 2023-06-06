@@ -6,7 +6,7 @@
     margin: 80px 0;
 }
 .modal-content{
-    max-height: 90vh;
+/*     max-height: 90vh; */
     max-width: 90vw;
 }
 .modal-img{
