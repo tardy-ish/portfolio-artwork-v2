@@ -10,6 +10,7 @@
 <div class="img-grid">
     {%for painting in paintings%}
         <img class="painting" 
+        loading="lazy"
         src="{{url_for('static',filename='assets/'+src+'/'+painting['file'])}}" 
         data-title="{{painting['name']}} ({{painting['year']}})"
         data-size="{{painting['size']}}"
