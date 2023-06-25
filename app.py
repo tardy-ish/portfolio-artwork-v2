@@ -4,9 +4,6 @@ import json
 
 import config
 
-from flask_mail import Mail
-from mailing import clientMessage
-
 from datetime import datetime
 
 import logging
@@ -29,7 +26,6 @@ if os.getenv('env') == 'dev':
     app.config.from_object(config.DevelopmentConfig)
 app.secret_key = 'wot be this'
 
-mail = Mail(app)
 db = SQLAlchemy(app)
 
 
