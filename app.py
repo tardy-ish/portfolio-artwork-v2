@@ -22,6 +22,7 @@ file_name = datetime.now().strftime("%Y-%m-%d-%H-%M")
 fileHandler = logging.FileHandler(f"./logs/{file_name}.log")
 logger.addHandler(fileHandler)
 
+
 app = Flask(__name__)
 app.config.from_object(config.ProductionConfig)
 if os.getenv('env') == 'dev':
@@ -115,9 +116,11 @@ def exhibitions(lang):
 @app.route('/<lang>/publications')
 def publications(lang):
     tls = json.load(open('./static/translations.json',encoding='utf-8'))
+    articles = json.load(open('./static/publications.json',encoding='utf-8'))
     return render_template(
         'publications.html',
         publications="active",
+        articles=articles,
         lang=lang,
         content=tls[lang]
     )

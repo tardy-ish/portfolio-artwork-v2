@@ -26,7 +26,8 @@
         "copyright": "Copyright",
         "flag" :"us",
         "publications":"Publications",
-        "exhibitions":"Exhibitions"
+        "exhibitions":"Exhibitions",
+        "original-link":"Link to full Article"
     },
     "ar": {
         "brand": "لانا خيّاط",
@@ -55,7 +56,8 @@
         "submit": "إرسال",
         "copyright": "حقوق الطبع والنشر",
         "flag" :"lb",
-        "exhibitions":"المعارض"
+        "exhibitions":"المعارض",
+        "original-link":"Link to full Article"
     },
     "es": {
         "brand": "LANA KHAYAT",
@@ -83,6 +85,7 @@
         "submit": "Entregar",
         "copyright": "Copyright",
         "flag" : "es",
-        "exhibitions": "Exhibición"
+        "exhibitions": "Exhibición",
+        "original-link":"Link to full Article"
     }
 }

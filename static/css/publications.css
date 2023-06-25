@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #fff; /* try #212121 also for dark mode */
+    --title-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.contentDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Timeline Container */
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+    width: 55%;
+}
+.original-link{
+    text-align: right;
+}
+.ar {
+    text-align: right;
+}
+.ar .original-link{
+    text-align: left;
+}
+/* Outer Layer with the timeline border */
+.outer {
+    border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    color: gray;
+    border-radius: 8px;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Title of the card */
+.title {
+    color: var(--title-color);
+    position: relative;
+    margin-bottom: -5px;
+}
+
+.subtitle{
+    color: rgb(65, 65, 65);
+}
+
+
+
+/* Timeline dot  */
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -37px;
+    border: 3px solid black;
+}
+
+@media (max-width: 1200px){
+    .timeline{
+        width: 80%;
+        margin-top: -80px;
+    }
+}
+
+@media (max-width: 576px){
+    .timeline{
+        width: 100%;
+        margin-top: -80px;
+    }
+}

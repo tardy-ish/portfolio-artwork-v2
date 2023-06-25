@@ -9,10 +9,32 @@
 {%endblock%}
 
 {%block dispContent%}
-<h1>Coming Soon!</h1>
+<div class="timeline"> 
+<div class="outer">
+{%for article in articles%}
+    <div class="card {{article['lang']}}">
+        <div class="info">
+        <h3 class="title">
+            {{article['title']}}
+        </h3>
+        <span class="subtitle">
+            {{article['subtitle']}}
+        </span>
+        <p>
+            {{article['info']}}
+        </p>
+        <p class="original-link">
+            <a href="{{article['link']}}" target="_blank" rel="noopener noreferrer" class="link-dark">
+                {{content['original-link']}}
+            </a>
+        </p>
+        </div>
+    </div>
+{%endfor%}
+</div>
+</div>
 {%endblock%}
 
 {%block js%}
-    <script src="{{url_for('static',filename = 'js/publications.js')}}">
-    </script>
+<script src="{{url_for('static',filename = 'js/publications.js')}}"></script>
 {%endblock%}

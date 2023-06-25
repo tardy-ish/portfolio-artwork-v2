@@ -1,5 +1,9 @@
 import os
 import json
+
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv())
+
 class Config(object):
     DEBUG = False
     TESTING = False
@@ -12,10 +16,10 @@ class Config(object):
     # MAIL_USE_TLS = True if os.getenv('TLS').strip() == "True" else False
     # MAIL_DEFAULT_SENDER = os.getenv('EMAIL').strip()
 
-    db_user = os.getenv('db_u').strip()
-    db_pass = os.getenv('db_p').strip()
-    db_host = os.getenv('db_h').strip()
-    db_name = os.getenv('db_n').strip()
+    db_user = os.getenv('DB_USERNAME').strip()
+    db_pass = os.getenv('DB_PASS').strip()
+    db_host = os.getenv('DB_HOST').strip()
+    db_name = os.getenv('DB_NAME').strip()
     SQLALCHEMY_DATABASE_URI = f'mysql+mysqlconnector://{db_user}:{db_pass}@{db_host}/{db_name}'
 
 
