@@ -8,3 +8,6 @@ env*
 *.env
 /trial_error
 source.sh
+node_modules/
+package*
+image.js
